@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core">
+   <h:head>
+         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+      <title>Devolução - Manter Devolução</title>
+      <link rel="stylesheet" type="text/css" href=".\CSS\estilo.css"/>
+   </h:head>
+   <h:body styleClass="corpo">
+      <img src=".\Imagens\Cabecalho.jpg"/>
+      <hr/>
+           <nav id="menu" align="center">
+         <ul>
+            <li> <a href="index.xhtml"><b>Início</b></a></li>
+            <li> <a href="cliente.xhtml"><b>Cliente</b></a> </li>
+            <li> <a href="livro.xhtml"><b>Livro</b></a> </li>
+            <li> <a href="emprestimo.xhtml"><b>Empréstimo</b></a> </li>
+            <li> <a href="devolucao.xhtml"><b>Devolução</b></a> </li>
+            <li> <a href="relatorio.xhtml"><b>Relatório</b></a> </li>
+         </ul>  
+      </nav>
+      <hr></hr>
+      <h1 align="center" id="titulo">Devolução</h1>
+      
+      <h:form>
+         <h:messages/>
+         <h3 id="dadosDevolucaoDev">Dados da Devolução</h3>
+         <h:panelGrid columns="2" styleClass="painelDevolucao">
+            <h:outputLabel styleClass="labelDataDevolucaoDev" value="Data Devolução: " for="data_dev"/>
+            <h:inputText styleClass="textDataDevDev" id="Data_devolucao" label="data_dev" value="#{Devolucao.data_dev}" required="true" />  
+         </h:panelGrid>
+         <h:panelGrid columns="5">
+            <h:outputLabel styleClass="cpfCliDev" value="CPF do Cliente: " for="CPF_Cliente"/>
+            <h:inputText styleClass="txtCPFCliDev" id="cpf_Cliente" label="cpfCliente" value="#{Cliente.cpf}" required="true" />
+            <h:commandButton styleClass="btnPesqDev" value="Pesquisar"/>
+            <h:outputLabel styleClass="nomeCliDev" value="Nome do Cliente: " for="nome_Cliente"/>
+            <h:inputText styleClass="txtNomeCliDev" id="nome_Cliente" label="nomeCliente" value="#{Cliente.nome}" required="true" />
+         </h:panelGrid>
+         <h:panelGrid columns="2">
+            <h:outputLabel styleClass="lblLivroDev" value="Livros Emprestados " for="livro_emp"/>
+            <h:dataTable styleClass="tabelaDevolucao">
+               <f:facet name="header">Livros</f:facet>
+               <h:column> 
+                  <f:facet name="header">CodigoLivro</f:facet>
+               </h:column>
+               <h:column>
+                  <f:facet name="header">NomeLivro</f:facet>
+               </h:column>     
+            </h:dataTable>
+            <h:commandButton styleClass="botaoConfirmaDev" value="Confirma"/>
+         </h:panelGrid>  
+      
+      </h:form>
+      
+      <hr></hr>
+      <img src=".\Imagens\rodape.jpg"/>
+   </h:body>
+</html>

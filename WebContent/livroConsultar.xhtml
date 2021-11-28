@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core">
+   <h:head>
+         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+      <title>Home - Página Inicial</title>
+      <link rel="stylesheet" type="text/css" href=".\CSS\estilo.css"/>
+   </h:head>
+   <h:body styleClass="corpo">
+      <img src=".\Imagens\Cabecalho.jpg"/>
+      <hr/>
+      <nav id="menu" align="center">
+         <ul>
+            <li> <a href="index.xhtml"><b>Início</b></a></li>
+            <li> <a href="cliente.xhtml"><b>Cliente</b></a> </li>
+            <li> <a href="livro.xhtml"><b>Livro</b></a> </li>
+            <li> <a href="emprestimo.xhtml"><b>Empréstimo</b></a> </li>
+            <li> <a href="devolucao.xhtml"><b>Devolução</b></a> </li>
+            <li> <a href="relatorio.xhtml"><b>Relatório</b></a> </li>
+         </ul>  
+      </nav>
+      <hr></hr>
+            <h1 align="center" id="titulo">Controle de Livros - Relatório</h1>
+      <nav id="menu" align="center">
+         <ul>
+            <li> <a href="livro.xhtml"><b>Cadastrar</b></a></li>
+            <li> <a href="livroAtualizar.xhtml"><b>Atualizar</b></a> </li>
+            <li> <a href="livroConsultar.xhtml"><b>Consultar</b></a> </li>
+            <li> <a href="livroExcluir.xhtml"><b>Excluir</b></a> </li>
+            <li> <a href="livroRelatorio.xhtml"><b>Relatório de Livro</b></a> </li>
+         </ul>  
+      </nav>   
+         
+      <h:form>
+         <h:messages/>
+         <h:panelGrid columns="5" styleClass="painelLivro">
+         </h:panelGrid>
+         <h:panelGrid columns="2">
+            <h:dataTable styleClass="tabelaRelatorioli" value="#{livroBean.listLivro}" var="dados">
+                <h:column>
+                   <f:facet name="header">
+                      <h:outputText value="codigo"></h:outputText>                      
+                   </f:facet>
+                   <h:outputText value="#{dados.codLivro}"></h:outputText>
+                </h:column>    
+                <h:column>
+                   <f:facet name="header">
+                      <h:outputText value="Livro"></h:outputText>                      
+                   </f:facet>
+                   <h:outputText value="#{dados.nomeLivro}"></h:outputText>
+                </h:column>  
+                <h:column>
+                   <f:facet name="header">
+                      <h:outputText value="ISBN"></h:outputText>                      
+                   </f:facet>
+                   <h:outputText value="#{dados.isbn}"></h:outputText>
+                </h:column> 
+                <h:column>
+                   <f:facet name="header">
+                      <h:outputText value="dataPublicação"></h:outputText>                      
+                   </f:facet>
+                   <h:outputText value="#{dados.dataPub}"></h:outputText>
+                </h:column> 
+                <h:column>
+                   <f:facet name="header">
+                      <h:outputText value="Autor"></h:outputText>                      
+                   </f:facet>
+                   <h:outputText value="#{dados.nomeAutor}"></h:outputText>
+                </h:column> 
+                <h:column>
+                   <f:facet name="header">
+                      <h:outputText value="Editora"></h:outputText>                      
+                   </f:facet>
+                   <h:outputText value="#{dados.nomeEditora}"></h:outputText>
+                </h:column> 
+                <h:column>
+                   <f:facet name="header">
+                      <h:outputText value="Assunto"></h:outputText>                      
+                   </f:facet>
+                   <h:outputText value="#{dados.assunto}"></h:outputText>
+                </h:column> 
+                <h:column>
+                   <f:facet name="header">
+                      <h:outputText value="status"></h:outputText>                      
+                   </f:facet>
+                   <h:outputText value="#{dados.status}"></h:outputText>
+                </h:column> 
+                <h:column>
+                   <f:facet name="header">
+                      <h:outputText value="Descrição"></h:outputText>                      
+                   </f:facet>
+                   <h:outputText value="#{dados.descricao}"></h:outputText>
+                </h:column> 
+                <h:column>
+                   <f:facet name="header">
+                      <h:outputText value="Ações"></h:outputText>                      
+                   </f:facet>
+                   <h:commandButton value="[EDITAR]" action="livroAtualizar" actionListener="#{livroBean.selecionarReg}"></h:commandButton>
+                   <h:commandButton value="[APAGAR]" action="livroExcluir" actionListener="#{livroBean.selecionarReg}"></h:commandButton>
+                </h:column> 
+            </h:dataTable>  
+                      
+         </h:panelGrid>  
+      </h:form>
+      
+      
+      <hr></hr>
+      <img src=".\Imagens\rodape.jpg"/>
+   </h:body>
+</html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core">
+   <h:head>
+         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+      <title>Relatório - Consulta de Dados</title>
+      <link rel="stylesheet" type="text/css" href=".\CSS\estilo.css"/>
+   </h:head>
+   <h:body styleClass="corpo">
+      <img src=".\Imagens\Cabecalho.jpg"/>
+      <hr/>
+      <nav id="menu" align="center">
+         <ul>
+            <li> <a href="index.xhtml"><b>Início</b></a></li>
+            <li> <a href="cliente.xhtml"><b>Cliente</b></a> </li>
+            <li> <a href="livro.xhtml"><b>Livro</b></a> </li>
+            <li> <a href="emprestimo.xhtml"><b>Empréstimo</b></a> </li>
+            <li> <a href="devolucao.xhtml"><b>Devolução</b></a> </li>
+            <li> <a href="relatorio.xhtml"><b>Relatório</b></a> </li>
+         </ul>  
+      </nav>
+            <hr></hr>
+      <h1 align="center" id="titulo">Relatórios</h1><br></br>
+      <h:form>
+         <h:messages/>
+         <h:panelGrid columns="2" styleClass="painelRelatorio">
+              <h:outputLabel styleClass="lblescolhaOpcaoRelatorio" value="Escolha uma Opção: " for="escolhaCliente"/>
+              <h:selectOneMenu styleClass="escolhaOpcaoRelatorio" id="escolhaCliente" label="escolha" value="#{cliente.opcao}" required="true">
+                 <f:selectItem itemValue="0" itemLabel="" />
+                 <f:selectItem itemValue="1" itemLabel="Livros" />
+              </h:selectOneMenu>
+         </h:panelGrid>
+         <h:panelGrid columns="5">
+            <h:outputLabel styleClass="lblDtIniRel" value="Data Incial: " for="data_inicio"/>
+            <h:inputText styleClass="txtDtIniRel" id="data_inicio" label="data_ini" value="#{Emprestimo.data_emp}" required="true" />  
+            <h:outputLabel styleClass="lblDtFinRel" value="Data Final " for="data_final"/>
+            <h:inputText styleClass="txtDtFinRel" id="Data_final" label="data_final" value="#{Devolucao.data_dev}" required="true" />
+            <h:commandButton styleClass="botaoPesquisarRel" value="Pesquisar" />
+         </h:panelGrid>
+         <h:panelGrid columns="2">
+            <h:dataTable styleClass="tabelaRelatorio">
+               <f:facet name="header">Livros</f:facet>
+               <h:column> 
+                  <f:facet name="header">Quantidade</f:facet>
+               </h:column>
+               <h:column>
+                  <f:facet name="header">Assunto</f:facet>
+               </h:column>     
+            </h:dataTable>
+         </h:panelGrid>  
+         <h:panelGrid>
+            <h:commandButton styleClass="botaoGeraRel" value="Gerar PDF"/>
+         </h:panelGrid>
+      </h:form>
+      
+            <hr></hr>
+      <img src=".\Imagens\rodape.jpg"/>
+   </h:body>
+</html>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core">
+   <h:head>
+         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+      <title>Cliente - Manter Dados</title>
+      <link rel="stylesheet" type="text/css" href=".\CSS\estilo.css"/>
+   </h:head>
+   <h:body styleClass="corpo">
+      <img src=".\Imagens\Cabecalho.jpg"/>
+      <hr/>
+      <nav id="menu" align="center">
+         <ul>
+            <li> <a href="index.xhtml"><b>Início</b></a></li>
+            <li> <a href="cliente.xhtml"><b>Cliente</b></a> </li>
+            <li> <a href="livro.xhtml"><b>Livro</b></a> </li>
+            <li> <a href="emprestimo.xhtml"><b>Empréstimo</b></a> </li>
+            <li> <a href="devolucao.xhtml"><b>Devolução</b></a> </li>
+            <li> <a href="relatorio.xhtml"><b>Relatório</b></a> </li>
+         </ul>  
+      </nav>
+   <hr></hr>
+      <h1 align="center" id="titulo">Controle de Clientes</h1>
+      <h:form >
+          <h:messages/>
+          <h:panelGrid columns="2">
+              <h:outputLabel styleClass="escolhaCliente1" id="escolhaCliente1" value="Escolha uma Opção: " for="escolhaCliente"/>
+              <h:selectOneMenu styleClass="escolhaCliente2" id="escolhaCliente2" label="escolha" value="#{cliente.opcao}" required="true">
+                 <f:selectItem itemValue="0" itemLabel="" />
+                 <f:selectItem itemValue="1" itemLabel="Cadastrar" />
+                 <f:selectItem itemValue="2" itemLabel="Excluir" />
+                 <f:selectItem itemValue="3" itemLabel="Alterar" />
+                 <f:selectItem itemValue="4" itemLabel="Consultar" />
+              </h:selectOneMenu>
+          </h:panelGrid>
+          <h3 id="titulo_Separacao">Dados do Cliente</h3>
+          <br/>
+          <h:panelGrid columns="4" styleClass="painelCliente">
+              <h:outputLabel styleClass="LabelNomeCliente" value="Nome: " for="nome"/>
+              <h:inputText styleClass="TextNomeCliente" id="nome" label="Nome" value="#{Cliente.nome}" required="true" />
+              <h:outputLabel styleClass="LabelCPFCliente" value="CPF: " for="cpf"/>
+              <h:inputText styleClass="TextCPFCliente" id="cpf" label="CPF" value="#{Cliente.cpf}" required="true"/>
+              <h:outputLabel styleClass="LabelRGCliente" value="RG: " for="rg"/>
+              <h:inputText styleClass="TextRGCliente" id="rg" label="RG" value="#{Cliente.rg}" required="true"/>
+              <h:outputLabel styleClass="LabelDataNascCliente" value="Data Nascimento: " for="dt_nasc"/>
+              <h:inputText styleClass="TextDataNascCliente" id="dt_nasc" label="DataNascimento" value="#{Cliente.dt_nasc}" required="true"/>
+              <h:outputLabel styleClass="LabelEmail" value="E-Mail " for="email1"/>
+              <h:inputText styleClass="TextEmail" id="email1" label="E-Mail1" value="#{Cliente.email}" required="true"/>
+              <h:outputLabel styleClass="LabelTelRes" value="Telefone Residencial: " for="tel_res"/>
+              <h:inputText styleClass="TextTelRes" id="tel_res" label="telRes" value="#{Cliente.tel_res}" required="true"/>
+              <h:outputLabel styleClass="LabelTelRec" value="Telefone Recado" for="tel_rec"/>
+              <h:inputText styleClass="TextTelRec" id="tel_rec" label="tel_rec" value="#{Cliente.tel_rec}" required="true"/>
+              <h:outputLabel styleClass="LabelTelCel" value="Telefone Celular " for="tel_cel"/>
+              <h:inputText styleClass="TextTelCel" id="tel_cel" label="tel_cel" value="#{Cliente.tel_cel}" required="true"/>
+              <h3 id="endereco">Endereço</h3>  
+          </h:panelGrid>
+          <h:panelGrid columns="4">
+              <h:outputLabel styleClass="LabelRua" value="Rua: " for="rua"/>
+              <h:inputText styleClass="TextRua" id="rua" label="rua" value="#{Cliente.rua}" required="true"/>
+              <h:outputLabel styleClass="LabelNumero" value="Numero: " for="numero"/>
+              <h:inputText styleClass="TextNumero" id="numero" label="numero" value="#{Cliente.numero}" required="true"/>
+              <h:outputLabel styleClass="LabelComplemento" value="Complemento: " for="complemento"/>
+              <h:inputText styleClass="TextComplemento" id="complemento" label="complemento" value="#{Cliente.complemento}" required="true"/>
+              <h:outputLabel styleClass="LabelBairro" value="Bairro: " for="bairro"/>
+              <h:inputText styleClass="TextBairro" id="bairro" label="bairro" value="#{Cliente.bairro}" required="true"/>
+              <h:outputLabel styleClass="LabelCidade" value="Cidade: " for="cidade"/>
+              <h:inputText styleClass="TextCidade" id="cidade" label="cidade" value="#{Cliente.cidade}" required="true"/>
+              <h:outputLabel styleClass="LabelEstado" value="Estado: " for="estado"/>
+              <h:selectOneListbox styleClass="ListEstado" id="estado" label="estado" value="#{Cliente.estado}" required="true"/>
+              <h:outputLabel styleClass="LabelCep" value="CEP: " for="cep"/>
+              <h:inputText styleClass="TextCep" id="cep" label="cep" value="#{Cliente.cep}" required="true"/>                      
+          </h:panelGrid>
+          <h:panelGrid>
+              <h:commandButton styleClass="botaoConfirmarCliente" value="Confirmar"/>
+          </h:panelGrid>
+      </h:form>
+      <hr ></hr>
+      <img src=".\Imagens\rodape.jpg"/>
+   </h:body>
+</html>

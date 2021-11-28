@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core">
+   <h:head>
+         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+      <title>Home - Página Inicial</title>
+      <link rel="stylesheet" type="text/css" href=".\CSS\estilo.css"/>
+   </h:head>
+   <h:body styleClass="corpo">
+      <img src=".\Imagens\Cabecalho.jpg"/>
+      <hr/>
+      <nav id="menu" align="center">
+         <ul>
+            <li> <a href="index.xhtml"><b>Início</b></a></li>
+            <li> <a href="cliente.xhtml"><b>Cliente</b></a> </li>
+            <li> <a href="livro.xhtml"><b>Livro</b></a> </li>
+            <li> <a href="emprestimo.xhtml"><b>Empréstimo</b></a> </li>
+            <li> <a href="devolucao.xhtml"><b>Devolução</b></a> </li>
+            <li> <a href="relatorio.xhtml"><b>Relatório</b></a> </li>
+         </ul>  
+      </nav>
+      <hr></hr>
+      
+            <h1 align="center" id="titulo">Controle de Livros - Excluir</h1>
+      <nav id="menu" align="center">
+         <ul>
+            <li> <a href="livro.xhtml"><b>Cadastrar</b></a></li>
+            <li> <a href="livroAtualizar.xhtml"><b>Atualizar</b></a> </li>
+            <li> <a href="livroConsultar.xhtml"><b>Consultar</b></a> </li>
+            <li> <a href="livroExcluir.xhtml"><b>Excluir</b></a> </li>
+            <li> <a href="livroRelatorio.xhtml"><b>Relatório de Livro</b></a> </li>
+         </ul>  
+      </nav>   
+                          
+      <h:form>
+         <h:messages/>
+         <h:outputText id="desejaApagar" value="Deseja apagar o Registro Abaixo?"></h:outputText><br/>
+         <h:panelGrid styleClass="painelLivro" columns="9">
+            <h:outputText class="codExc" value="Codigo: #{livroBean.liv.codLivro}"></h:outputText>
+            <h:outputText id="isbnExc" value="ISBN: #{livroBean.liv.isbn}"></h:outputText> 
+            <h:outputText id="livroExc" value="NomeLivro #{livroBean.liv.nomeLivro}"></h:outputText> 
+            <h:outputText id="pubExc" value="DataPublicação #{livroBean.liv.dataPub}"></h:outputText> 
+            <h:outputText id="autorExc" value="Autor: #{livroBean.liv.nomeAutor}"></h:outputText> 
+            <h:outputText id="editExc" value="Editora: #{livroBean.liv.nomeEditora}"></h:outputText> 
+            <h:outputText id="assExc" value="Assunto: #{livroBean.liv.assunto}"></h:outputText> 
+            <h:outputText id="staExc" value="Status #{livroBean.liv.status}"></h:outputText> 
+            <h:outputText id="descExc" value="Descrição #{livroBean.liv.descricao}"></h:outputText> 
+            
+            <h:commandButton value="SIM" action="#{livroBean.apagar}"></h:commandButton>
+            &nbsp;
+            <h:commandButton value="NÃO" action="livroConsultar"></h:commandButton>
+         </h:panelGrid>
+      </h:form>
+      
+      
+      
+      <hr></hr>
+      <img src=".\Imagens\rodape.jpg"/>
+   </h:body>
+</html>

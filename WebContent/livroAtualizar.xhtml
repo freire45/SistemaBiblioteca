@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core">
+   <h:head>
+         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+      <title>Livro - Manter Dados</title>
+      <link rel="stylesheet" type="text/css" href=".\CSS\estilo.css"/>
+   </h:head>
+   <h:body styleClass="corpo">
+      <img src=".\Imagens\Cabecalho.jpg"/>
+      <hr/>
+            <nav id="menu" align="center">
+         <ul>
+            <li> <a href="index.xhtml"><b>Início</b></a></li>
+            <li> <a href="cliente.xhtml"><b>Cliente</b></a> </li>
+            <li> <a href="livro.xhtml"><b>Livro</b></a> </li>
+            <li> <a href="emprestimo.xhtml"><b>Empréstimo</b></a> </li>
+            <li> <a href="devolucao.xhtml"><b>Devolução</b></a> </li>
+            <li> <a href="relatorio.xhtml"><b>Relatório</b></a> </li>
+         </ul>  
+      </nav>   
+      <hr></hr>
+      <h1 align="center" id="titulo">Controle de Livros - Atualizar</h1>
+      <nav id="menu" align="center">
+         <ul>
+            <li> <a href="livro.xhtml"><b>Cadastrar</b></a></li>
+            <li> <a href="livroAtualizar.xhtml"><b>Atualizar</b></a> </li>
+            <li> <a href="livroConsultar.xhtml"><b>Consultar</b></a> </li>
+            <li> <a href="livroExcluir.xhtml"><b>Excluir</b></a> </li>
+            <li> <a href="livroRelatorio.xhtml"><b>Relatório de Livro</b></a> </li>
+         </ul>  
+      </nav>   
+         
+      <h:form>
+         <h:messages/>
+         <h:panelGrid styleClass="painelLivro" columns="4">
+            <h:outputLabel styleClass="LabelCodigoLivro" value="Código do Livro: " />
+            <h:inputText styleClass="TextCodigoLivro" id="codigoLivro" label="cd_livro" value="#{livroBean.liv.codLivro}" />
+            <h:outputLabel styleClass="LabelISBN" value="ISBN: " for="isbn"/>
+            <h:inputText styleClass="TextISBN" id="isbn" label="isbn" value="#{livroBean.liv.isbn}" />
+            <h:outputLabel styleClass="LabelNomeLivro" value="Nome do Livro: " />
+            <h:inputText styleClass="TextNomeLivro" id="nomeLivro" label="nome_livro" value="#{livroBean.liv.nomeLivro}"/>
+            <h:outputLabel styleClass="LabelDataPub" value="Data de Publicação: " />
+            <h:inputText styleClass="TextDataPub" id="data_pub" label="data_pub" value="#{livroBean.liv.dataPub}" size="10" maxlength="10" >
+            </h:inputText>
+            <h:outputLabel styleClass="LabelNomeAutor" value="Nome do Autor: " />
+            <h:inputText styleClass="TextNomeAutor" id="nome_autor" label="nome_autor" value="#{livroBean.liv.nomeAutor}" />
+            <h:outputLabel styleClass="LabelNomeEditora" value="Nome da Editora: " />
+            <h:inputText styleClass="TextNomeEditora" id="nomeEditora" label="nome_Editora" value="#{livroBean.liv.nomeEditora}" />
+            <h:outputLabel styleClass="LabelAssunto" value="Assunto: " />
+            <h:inputText styleClass="TextAssunto" id="assunto" label="assunto_livro" value="#{livroBean.liv.assunto}" />
+            <h:outputLabel styleClass="LabelStatus" value="Status: " />
+            <h:selectOneMenu styleClass="TextStatus" id="livroStatus" label="status" value="#{livroBean.liv.status}" >
+                 <f:selectItem itemValue="S" itemLabel="S" for="livroStatus" />
+                 <f:selectItem itemValue="N" itemLabel="N" for="livroStatus" />
+            </h:selectOneMenu>
+         </h:panelGrid>
+         <h:panelGrid columns="2">
+            <h:outputLabel styleClass="LabelDescricao" value="Descrição" />
+            <h:inputTextarea cols="64" rows="6" styleClass="TextDescricao" id="descricaoLivro" value="${livroBean.liv.descricao}"/>            
+            <h:commandButton action="#{livroBean.atualizarLivro}" styleClass="botaoConfirmaLivro" value="Atualizar"></h:commandButton>
+         </h:panelGrid>
+      </h:form>
+
+       
+              <hr></hr>
+      <img src=".\Imagens\rodape.jpg"/>
+   </h:body>
+</html>

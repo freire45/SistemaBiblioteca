@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core">
+   <h:head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+      <title>Home - Página Inicial</title>
+      <link rel="stylesheet" type="text/css" href=".\CSS\estilo.css"/>
+   </h:head>
+   <h:body styleClass="corpo">
+      <img src=".\Imagens\Cabecalho.jpg"/>
+      <hr/>
+      <nav id="menu" align="center">
+         <ul>
+            <li> <a href="index.xhtml"><b>Início</b></a></li>
+            <li> <a href="cliente.xhtml"><b>Cliente</b></a> </li>
+            <li> <a href="livro.xhtml"><b>Livro</b></a> </li>
+            <li> <a href="emprestimo.xhtml"><b>Empréstimo</b></a> </li>
+            <li> <a href="devolucao.xhtml"><b>Devolução</b></a> </li>
+            <li> <a href="relatorio.xhtml"><b>Relatório</b></a> </li>
+         </ul>  
+      </nav>
+      <hr/>
+      <h:form>
+         <h:messages/>
+         <h1 align="center" id="titulo">Página Inicial - Escolha Uma Opção:</h1>
+         <h:panelGrid columns="3" styleClass="painelInicial">
+            <h:commandButton action="cliente" styleClass ="botaoCliente" value="Cliente" href="cliente.xhtml"/>
+            <h:commandButton action="livro" styleClass ="botaoLivro" value="Livro" href="livro.xhtml"/>  
+            <h:commandButton action="emprestimo" styleClass ="botaoEmprestimo" value="Empréstimo"/>  
+            <h:commandButton action="devolucao" styleClass ="botaoDevolucao" value="Devolução"/> 
+            <h:commandButton action="relatorio" styleClass ="botaoRelatorio" value="Relatório"/>        
+         </h:panelGrid>
+      </h:form>
+      <br/><br/>
+      <hr></hr>
+      <img src=".\Imagens\rodape.jpg"/>
+   </h:body>
+</html>

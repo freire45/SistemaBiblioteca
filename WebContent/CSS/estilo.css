@@ -1,0 +1,1210 @@
+.corpo{
+	    background-color:#6495ED;
+
+}
+
+.botaoCliente {  
+  
+width:300px !important;  
+height:100px !important; 
+background-color: #483D8B;
+color: #6495ED;
+font-family: arial, sans-serif;
+font-size:40px;
+position:absolute;
+top:62%;
+left:15%;
+
+
+  
+}  
+.botaoLivro {  
+  
+width:300px !important;  
+height:100px !important; 
+background-color: #483D8B;
+color: #6495ED;
+font-family: arial, sans-serif;
+font-size:40px;
+position:absolute;
+top:62%;
+left:40%;
+
+  
+}  
+
+.botaoEmprestimo {  
+  
+width:300px !important;  
+height:100px !important; 
+background-color: #483D8B;
+color: #6495ED;
+font-family: arial, sans-serif;
+font-size:40px;
+position:absolute;
+top:62%;
+left:65%;
+
+  
+}  
+
+.botaoDevolucao {  
+  
+width:300px !important;  
+height:100px !important; 
+background-color: #483D8B;
+color: #6495ED;
+font-family: arial, sans-serif;
+font-size:40px;
+position:absolute;
+top:82%;
+left:25%;
+
+  
+} 
+
+.botaoRelatorio {  
+  
+width:300px !important;  
+height:100px !important; 
+background-color: #483D8B;
+color: #6495ED;
+font-family: arial, sans-serif;
+font-size:40px;
+position:absolute;
+top:82%;
+left:55%;
+
+  
+} 
+
+.painelInicial{
+		border:2px solid #483D8B;
+        padding: 250px 1218px 50px 100px;
+}
+
+#menu ul{
+	padding:0px;
+	nargin:0px;
+	list-style:none;
+}
+#menu ul li{
+		display:inline;
+}
+
+#menu ul li a{
+	padding: 10px 30px;
+	display: inline-block;
+	
+	background-color:#483D8B;
+	color: #6495ED;
+	text-decoration: none;
+	border-bottom:3px solid #B0C4DE;
+
+	
+}
+
+#titulo{
+	color: #483D8B;
+}
+
+.escolhaCliente1{
+	position:absolute;
+	top: 360px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.escolhaCliente2{
+    position:absolute;
+	top: 360px;
+	left: 580px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+#titulo_Separacao{
+    position:absolute;
+	top: 390px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+.LabelNomeCliente{
+	position:absolute;
+	top: 430px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.TextNomeCliente{
+	position:absolute;
+	top: 430px;
+	left: 450px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+.LabelCPFCliente{
+	position:absolute;
+	top: 430px;
+	left: 670px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.TextCPFCliente{
+	position:absolute;
+	top: 430px;
+	left: 715px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.LabelRGCliente{
+	position:absolute;
+	top: 465px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	
+}
+
+.TextRGCliente{
+	position:absolute;
+	top: 460px;
+	left: 440px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.LabelDataNascCliente{
+	position:absolute;
+	top: 465px;
+	left: 670px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.TextDataNascCliente{
+	position:absolute;
+	top: 460px;
+	left: 810px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	
+}
+
+.LabelEmail{
+	position:absolute;
+	top: 490px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.TextEmail{
+	position:absolute;
+	top: 485px;
+	left: 450px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	
+}
+
+.LabelTelRes{
+	position:absolute;
+	top: 490px;
+	left: 670px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.TextTelRes{
+	position:absolute;
+	top: 485px;
+	left: 840px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	
+}
+
+.LabelTelRec{
+    position:absolute;
+	top: 515px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.TextTelRec{
+    position:absolute;
+	top: 510px;
+	left: 530px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.LabelTelCel{
+	position:absolute;
+	top: 515px;
+	left: 750px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	
+}
+
+.TextTelCel{
+	position:absolute;
+	top: 510px;
+	left: 880px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+#endereco{
+	position:absolute;
+	top: 530px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 20px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.LabelRua{
+	position:absolute;
+	top: 580px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.TextRua{
+	position:absolute;
+	top: 575px;
+	left: 440px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.LabelNumero{
+	position:absolute;
+	top: 580px;
+	left: 670px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.TextNumero{
+	position:absolute;
+	top: 575px;
+	left: 740px;
+	font-family:arial, sans-serif;
+	font-size: 20px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.LabelComplemento{
+	position:absolute;
+	top: 610px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.TextComplemento{
+	position:absolute;
+	top: 605px;
+	left: 520px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.LabelBairro{
+	position:absolute;
+	top: 610px;
+	left: 750px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.TextBairro{
+	position:absolute;
+	top: 605px;
+	left: 810px;
+	font-family:arial, sans-serif;
+	font-size: 20px;
+	color: #483D8B;
+	font-weight: bold;
+}
+.LabelCidade{
+	position:absolute;
+	top: 645px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	
+}
+
+.TextCidade{
+	position:absolute;
+	top: 640px;
+	left: 460px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.LabelEstado{
+	position:absolute;
+	top: 645px;
+	left: 700px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.ListEstado{
+	position:absolute;
+	top: 640px;
+	left: 760px;
+	font-family:arial, sans-serif;
+	font-size: 20px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.LabelCep{
+	position:absolute;
+	top: 670px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.TextCep{
+	position:absolute;
+	top: 665px;
+	left: 460px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.botaoConfirmarCliente{
+	position:absolute;
+	top: 700px;
+	left: 1000px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	width:100px !important;  
+    height:50px !important; 
+    background-color:#6495ED;
+}
+
+.painelCliente{
+		border:2px solid #483D8B;
+        padding: 300px 1218px 50px 100px;
+        background-color: #87CEEB;
+}
+
+.LabelOpcaoLivro{
+	position:absolute;
+	top: 370px;
+	left: 460px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.ListOpcaoLivro{
+	position:absolute;
+	top: 370px;
+	left: 620px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+#DadosLivro{
+	position:absolute;
+	top: 395px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.LabelCodigoLivro{
+	position:absolute;
+	top: 450px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+.TextCodigoLivro{
+	position:absolute;
+	top: 450px;
+	left: 530px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.LabelISBN{
+	position:absolute;
+	top: 455px;
+	left: 750px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.TextISBN{
+	position:absolute;
+	top: 450px;
+	left: 800px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.LabelNomeLivro{
+	position:absolute;
+	top: 485px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.TextNomeLivro{
+	position:absolute;
+	top: 480px;
+	left: 530px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.LabelDataPub{
+	position:absolute;
+	top: 485px;
+	left: 750px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.TextDataPub{
+	position:absolute;
+	top: 480px;
+	left: 910px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.LabelNomeAutor{
+	position:absolute;
+	top: 510px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.TextNomeAutor{
+	position:absolute;
+	top: 510px;
+	left: 530px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.LabelNomeEditora{
+	position:absolute;
+	top: 510px;
+	left: 750px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+
+.TextNomeEditora{
+	position:absolute;
+	top: 510px;
+	left: 910px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+
+.LabelAssunto{
+	position:absolute;
+	top: 540px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.TextAssunto{
+	position:absolute;
+	top: 540px;
+	left: 530px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+
+.LabelStatus{
+	position:absolute;
+	top: 540px;
+	left: 750px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;		
+}
+
+.TextStatus{
+	position:absolute;
+	top: 540px;
+	left: 810px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+
+.LabelDescricao{
+	position:absolute;
+	top: 570px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.TextDescricao{
+	position:absolute;
+	top: 580px;
+	left: 530px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+
+.botaoConfirmaLivro{
+	position:absolute;
+	top: 700px;
+	left: 1000px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	width:100px !important;  
+    height:50px !important; 
+    background-color:#6495ED;
+}
+
+.painelLivro{
+		border:2px solid #483D8B;
+        padding: 300px 1290px 50px 100px;
+        background-color: #87CEEB;
+}
+
+#dadoEmprestimo{
+	position:absolute;
+	top: 360px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.LabelDataEmp{
+	position:absolute;
+	top: 410px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+.TextDataEmp{
+	position:absolute;
+	top: 405px;
+	left: 545px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+.LabelDataDev{
+	position:absolute;
+	top: 410px;
+	left: 770px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+.TextDataDev{
+	position:absolute;
+	top: 405px;
+	left: 900px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+.LabelCPFEmprestimo{
+		position:absolute;
+	top: 440px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+.TextCPFEmprestimo{
+	position:absolute;
+	top: 440px;
+	left: 530px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+.botaoPesquisarEmprestimo1{
+	position:absolute;
+	top: 440px;
+	left: 750px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	width:100px !important;  
+    height:25px !important; 
+    background-color:#6495ED;
+}
+.LabelNomeClienteEmprestimo{
+	position:absolute;
+	top: 445px;
+	left: 860px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+.TextNomeClienteEmprestimo{
+	position:absolute;
+	top: 445px;
+	left: 1000px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+.LabelCodigoLivroEmprestimo{
+	position:absolute;
+	top: 480px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+.TextCodigoLivroEmprestimo{
+	position:absolute;
+	top: 480px;
+	left: 530px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;		
+}
+.botaoPesquisarEmprestimo2{
+	position:absolute;
+	top: 480px;
+	left: 750px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	width:100px !important;  
+    height:25px !important; 
+    background-color:#6495ED;	
+}
+.LabelNomeLivroEmprestimo{
+	position:absolute;
+	top: 480px;
+	left: 860px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;		
+}
+.TextNomeLivroEmprestimo{
+	position:absolute;
+	top: 480px;
+	left: 1000px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+.botaoAdicionarEmprestimo{
+	position:absolute;
+	top: 570px;
+	left: 530px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	width:100px !important;  
+    height:25px !important; 
+    background-color:#6495ED;	
+}
+.TabelaEmprestimo{
+	position:absolute;
+	top: 510px;
+	left: 700px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	border:2px solid #483D8B;
+}
+.botaoConfirmaEmprestimo{
+	position:absolute;
+	top: 700px;
+	left: 1200px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	width:100px !important;  
+    height:50px !important; 
+    background-color:#6495ED;
+}
+
+.painelEmprestimo{
+		border:2px solid #483D8B;
+        padding: 350px 1218px 50px 100px;
+        background-color: #87CEEB;
+}
+
+#dadosDevolucaoDev{
+	position:absolute;
+	top: 360px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.labelDataDevolucaoDev{
+	position:absolute;
+	top: 400px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+
+.textDataDevDev{
+	position:absolute;
+	top: 400px;
+	left: 545px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+
+.cpfCliDev{
+	position:absolute;
+	top: 435px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+
+.txtCPFCliDev{
+	position:absolute;
+	top: 430px;
+	left: 545px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+
+.btnPesqDev{
+	position:absolute;
+	top: 430px;
+	left: 770px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	width:100px !important;  
+    height:25px !important; 
+    background-color:#6495ED;	
+}
+.nomeCliDev{
+	position:absolute;
+	top: 435px;
+	left: 880px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+
+.txtNomeCliDev{
+	position:absolute;
+	top: 430px;
+	left: 1015px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+
+.lblLivroDev{
+	position:absolute;
+	top: 460px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+
+.tabelaDevolucao{
+	position:absolute;
+	top: 460px;
+	left: 590px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	border:2px solid #483D8B;
+}
+
+.botaoConfirmaDev{
+	position:absolute;
+	top: 620px;
+	left: 1200px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	width:100px !important;  
+    height:50px !important; 
+    background-color:#6495ED;
+}
+
+.painelDevolucao{
+		border:2px solid #483D8B;
+        padding: 300px 1218px 50px 100px;
+        background-color: #87CEEB;
+}
+
+.painelRelatorio{
+		border:2px solid #483D8B;
+        padding: 300px 1218px 50px 100px;
+        background-color: #87CEEB;
+}
+
+.escolhaOpcaoRelatorio{
+	position:absolute;
+	top: 360px;
+	left: 560px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.lblescolhaOpcaoRelatorio{
+	position:absolute;
+	top: 360px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
+
+.lblDtIniRel{
+	position:absolute;
+	top: 410px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+
+.txtDtIniRel{
+	position:absolute;
+	top: 405px;
+	left: 500px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	border:2px solid #483D8B;
+}
+.lblDtFinRel{
+	position:absolute;
+	top: 410px;
+	left: 735px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+
+.txtDtFinRel{
+	position:absolute;
+	top: 405px;
+	left: 820px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	border:2px solid #483D8B;
+}
+
+.botaoPesquisarRel{
+	position:absolute;
+	top: 405px;
+	left: 1045px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	width:100px !important;  
+    height:25px !important; 
+    background-color:#6495ED;
+}
+
+.tabelaRelatorio{
+	position:absolute;
+	top: 460px;
+	left: 590px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	border:2px solid #483D8B;	
+}
+
+.botaoGeraRel{
+	position:absolute;
+	top: 620px;
+	left: 800px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	width:100px !important;  
+    height:50px !important; 
+    background-color:#6495ED;
+}
+
+
+.lblDtIniRelli{
+	position:absolute;
+	top: 450px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+
+.txtDtIniRelli{
+	position:absolute;
+	top: 445px;
+	left: 500px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	border:2px solid #483D8B;
+}
+.lblDtFinRelli{
+	position:absolute;
+	top: 450px;
+	left: 735px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;	
+}
+
+.txtDtFinRelli{
+	position:absolute;
+	top: 445px;
+	left: 820px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	border:2px solid #483D8B;
+}
+
+.botaoPesquisarRelli{
+	position:absolute;
+	top: 445px;
+	left: 1045px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	width:100px !important;  
+    height:25px !important; 
+    background-color:#6495ED;
+}
+
+.tabelaRelatorioli{
+	
+	position:absolute;
+	top: 440px;
+	left: 15px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	border:2px solid #483D8B;	
+}
+
+.botaoGeraRelli{
+	position:absolute;
+	top: 720px;
+	left: 800px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	width:100px !important;  
+    height:50px !important; 
+    background-color:#6495ED;
+}
+
+.botaoPesquisarRelliAt{
+    position:absolute;
+	top: 450px;
+	left: 1045px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+	width:100px !important;  
+    height:25px !important; 
+    background-color:#6495ED;
+}
+
+#desejaApagar{
+	position:absolute;
+	top: 670px;
+	left: 400px;
+	font-family:arial, sans-serif;
+	font-size: 16px;
+	color: #483D8B;
+	font-weight: bold;
+}
